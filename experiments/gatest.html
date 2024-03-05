@@ -1,5 +1,10 @@
+<!DOCTYPE html>
 <html>
 <head>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
 <title>Testiranje, 1, 2, 3...</title>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XSWYT726P"></script>
@@ -9,6 +14,16 @@
   gtag('js', new Date());
 
   gtag('config', 'G-1XSWYT726P');
+
+  gtag('consent', 'default', {
+	'ad_storage': 'denied',
+	'ad_user_data': 'denied',
+	'ad_personalization': 'denied',
+	'analytics_storage': 'denied'
+  });
+
+  
+
 </script>
 </head>
 <body>
@@ -17,6 +32,9 @@
 <p id="t">Poslije slikice</p>
 <script type="text/javascript">
 	console.log("Script!")
+
+		$(document).ready(function() {
+	});
 	/*window.onload = function() {
 		console.log("Loaded!")
 		i = document.getElementById("i")
@@ -28,13 +46,7 @@
 
 </script>
 
-<script type="text/javascript" src="/webrtc_testing.js" > </script>
 <script type="text/javascript">
-	window.onload = function() {
-		i = 0
-		window.setInterval(function() {connectPeers(i); i=i+1}, 1000)
-		console.log("Timeout set!")
-	}
 	
 </script>
 </body>
