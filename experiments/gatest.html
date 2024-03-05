@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Testiranje, 1, 2, 3...</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XSWYT726P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1XSWYT726P');
+</script>
+</head>
+<body>
+<p>Prije slikice</p>
+<img src="test-svg.svg" id="i" width="1" height="1"/>
+<p id="t">Poslije slikice</p>
+<script type="text/javascript">
+	console.log("Script!")
+	/*window.onload = function() {
+		console.log("Loaded!")
+		i = document.getElementById("i")
+		t = document.getElementById("t")
+		s = "Width: " + i.naturalWidth + "\nHeight: " + i.naturalHeight
+		t.innerHTML = s
+		console.log(s)
+	}*/
+
+</script>
+
+<script type="text/javascript" src="/webrtc_testing.js" > </script>
+<script type="text/javascript">
+	window.onload = function() {
+		i = 0
+		window.setInterval(function() {connectPeers(i); i=i+1}, 1000)
+		console.log("Timeout set!")
+	}
+	
+</script>
+</body>
+</html>
